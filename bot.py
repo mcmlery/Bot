@@ -33,7 +33,7 @@ def error(update, context):
 
 def sevgi(update, context):
     """Echo the user message."""
-    update.message.reply_text('Güneşi papatyasına çok aşık <3')
+    update.message.reply_text('Güneşi papatyasına çok aşık ❤')
 
 
 def main():
