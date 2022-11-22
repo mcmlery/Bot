@@ -1,5 +1,5 @@
 import logging
-
+from unicode_tr import unicode_tr
 import telegram
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
@@ -14,12 +14,12 @@ logger = logging.getLogger(__name__)
 # context. Error handlers also receive the raised TelegramError object in error.
 def start(update, context):
     """Send a message when the command /start is issued."""
-    update.message.reply_text('Basladik hadi hayirlisi')
+    update.message.reply_text('BaŞladık hadi hayırlısı')
 
 
 def help(update, context):
     """Send a message when the command /help is issued."""
-    update.message.reply_text('Yardim geliyor')
+    update.message.reply_text('Yardım geliyor 😂')
 
 
 def echo(update, context):
@@ -33,7 +33,7 @@ def error(update, context):
 
 def sevgi(update, context):
     """Echo the user message."""
-    update.message.reply_text('Gunesi Papatyasini coooook seviyoooooor ')
+    update.message.reply_text('Güneşi papatyasına çok aşık <3')
 
 
 def main():
